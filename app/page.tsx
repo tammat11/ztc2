@@ -6,10 +6,10 @@ const products = [
 ];
 
 const advantages = [
-  ["01", "Официальный канал", "Прямое взаимодействие с Jingye Steel Group без лишних посредников."],
-  ["02", "Заводское качество", "Сертификаты и документы на поставляемые партии продукции."],
-  ["03", "Подбор по спецификации", "Подберём марку стали, стандарт, толщину, размер и объём."],
-  ["04", "Поставка в Казахстан", "Сопровождаем заказ от расчёта до получения покупателем."],
+  ["01", "↔", "DIRECT PARTNER", "Официальный канал", "Прямое взаимодействие с Jingye Steel Group без лишних посредников."],
+  ["02", "✓", "QUALITY CONTROL", "Заводское качество", "Сертификаты и документы на поставляемые партии продукции."],
+  ["03", "⌗", "YOUR SPEC", "Подбор по спецификации", "Подберём марку стали, стандарт, толщину, размер и объём."],
+  ["04", "→", "DELIVERY KZ", "Поставка в Казахстан", "Сопровождаем заказ от расчёта до получения покупателем."],
 ];
 
 export default function Home() {
@@ -58,7 +58,7 @@ export default function Home() {
 
     <section className="section advantagesSection" id="advantages">
       <div className="sectionTitle compact"><div><span className="overline">ПОЧЕМУ МЫ</span><h2>Надёжность на каждом этапе</h2></div></div>
-      <div className="advantagesGrid">{advantages.map(a=><article key={a[0]}><span>{a[0]}</span><div className="advIcon">◆</div><h3>{a[1]}</h3><p>{a[2]}</p></article>)}</div>
+      <div className="advantagesGrid">{advantages.map(a=><article key={a[0]}><span className="advNumber">{a[0]}</span><div className="advIcon">{a[1]}</div><small>{a[2]}</small><h3>{a[3]}</h3><p>{a[4]}</p><i /></article>)}</div>
     </section>
 
     <section className="deliverySection" id="delivery">
