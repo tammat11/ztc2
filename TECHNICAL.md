@@ -9,6 +9,14 @@
 - Блок преимуществ использует CSS-пиктограммы, короткие метки и hover-состояния без внешней библиотеки иконок.
 - `public/images/` — локальные изображения с официального сайта Jingye Steel Group.
 - `.openai/hosting.json` — конфигурация публикации в Sites.
+- `design-system/zhetysu-bayi-steel/MASTER.md` — сохранённая дизайн-система Trust & Authority от UI/UX Pro Max.
+
+## Дизайн-система
+- Направление: premium industrial / Trust & Authority.
+- Основные цвета: графит `#13171d`, сигнальный красный `#e21f2b`, бумажный фон `#f3f3f0`.
+- Иконки: единый набор `lucide-react`, без emoji и рисованных SVG.
+- Общая сетка: единые боковые поля `4vw`, адаптивные переломы 1050px и 720px.
+- Анимации отключаются через `prefers-reduced-motion`.
 
 ## Контент и контакты
 Фотографии и факты о производителе взяты с `https://www.hebeijingyesteel.com/about_us.html`.

@@ -1,76 +1,153 @@
+import {
+  ArrowDownRight,
+  ArrowRight,
+  Boxes,
+  Check,
+  ChevronRight,
+  Factory,
+  FileCheck2,
+  Globe2,
+  Layers3,
+  Ruler,
+  Send,
+  ShieldCheck,
+  Truck,
+} from "lucide-react";
+
 const products = [
-  { title: "Арматура", code: "HRB400 · HRB500", img: "/images/plant.jpg", pos: "12% center", text: "Рифлёная и гладкая арматура для жилого, промышленного и инфраструктурного строительства." },
-  { title: "Листовой прокат", code: "ГОСТ · ASTM · EN", img: "/images/plant.jpg", pos: "52% center", text: "Горячекатаный, холоднокатаный, оцинкованный лист и сталь специального назначения." },
-  { title: "Рулонная сталь", code: "HRC · CRC · GI", img: "/images/plant.jpg", pos: "76% center", text: "Рулоны для металлообработки, профилирования и серийного промышленного производства." },
-  { title: "Трубы и профиль", code: "Круглые · профильные", img: "/images/plant.jpg", pos: "0% center", text: "Трубный, сортовой и фасонный прокат для строительных и производственных задач." },
+  { id: "01", title: "Арматура", tag: "REBAR", text: "Для монолитного, промышленного и инфраструктурного строительства.", image: "/images/plant.jpg", position: "8% center", grades: "HRB400 · HRB500" },
+  { id: "02", title: "Листовая сталь", tag: "STEEL PLATE", text: "Горячекатаный, холоднокатаный, оцинкованный и специальный лист.", image: "/images/plant.jpg", position: "54% center", grades: "ГОСТ · ASTM · EN" },
+  { id: "03", title: "Рулонная сталь", tag: "STEEL COIL", text: "Рулоны для профилирования, обработки и серийного производства.", image: "/images/plant.jpg", position: "78% center", grades: "HRC · CRC · GI" },
+  { id: "04", title: "Трубы и профиль", tag: "PIPE & PROFILE", text: "Трубный, сортовой и фасонный прокат под задачи вашего проекта.", image: "/images/plant.jpg", position: "0% center", grades: "КРУГЛЫЕ · ПРОФИЛЬНЫЕ" },
 ];
 
 const advantages = [
-  ["01", "↔", "DIRECT PARTNER", "Официальный канал", "Прямое взаимодействие с Jingye Steel Group без лишних посредников."],
-  ["02", "✓", "QUALITY CONTROL", "Заводское качество", "Сертификаты и документы на поставляемые партии продукции."],
-  ["03", "⌗", "YOUR SPEC", "Подбор по спецификации", "Подберём марку стали, стандарт, толщину, размер и объём."],
-  ["04", "→", "DELIVERY KZ", "Поставка в Казахстан", "Сопровождаем заказ от расчёта до получения покупателем."],
+  { icon: Factory, title: "Прямой контракт", text: "Официальный канал поставки продукции Jingye Steel Group." },
+  { icon: ShieldCheck, title: "Контроль качества", text: "Сертификаты и документы на каждую поставляемую партию." },
+  { icon: Ruler, title: "Точно по ТЗ", text: "Марка стали, стандарт, размер и объём по вашей спецификации." },
+  { icon: Truck, title: "Поставка в Казахстан", text: "Сопровождение заказа от расчёта до получения груза." },
 ];
 
 export default function Home() {
-  return <main id="top">
-    <div className="topbar"><div>Официальный дистрибьютор Jingye Steel Group</div><div><span>Казахстан</span><span>Оптовые поставки металлопроката</span></div></div>
-    <header className="siteHeader">
-      <a className="brand" href="#top"><span className="brandIcon">ZB</span><span><b>ZHETYSU BAYI</b><small>STEEL</small></span></a>
-      <nav aria-label="Основная навигация"><a href="#catalog">Каталог</a><a href="#about">О компании</a><a href="#advantages">Преимущества</a><a href="#delivery">Поставка</a></nav>
-      <a className="navButton" href="#contact">Запросить цену <span>→</span></a>
-    </header>
-
-    <section className="heroSection">
-      <div className="heroBackdrop" />
-      <div className="heroInner">
-        <div className="heroText">
-          <div className="badge"><span>●</span> ПРЯМЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ</div>
-          <h1>МЕТАЛЛОПРОКАТ<br/>ДЛЯ <em>СИЛЬНЫХ</em><br/>ПРОЕКТОВ</h1>
-          <p>Поставляем продукцию Jingye Steel Group для строительных, производственных и инфраструктурных компаний Казахстана.</p>
-          <div className="heroButtons"><a className="btn red" href="#contact">Получить предложение <span>→</span></a><a className="btn outline" href="#catalog">Перейти в каталог</a></div>
+  return (
+    <main id="top">
+      <section className="hero">
+        <div className="utilityBar">
+          <span>Официальный дистрибьютор Jingye Steel Group</span>
+          <div><span>Казахстан</span><span>Оптовые поставки</span></div>
         </div>
-        <aside className="quickQuote">
-          <div className="quoteIcon">↗</div><p className="quoteLabel">Быстрый расчёт</p><h2>Отправьте<br/>спецификацию</h2><p>Рассчитаем стоимость, сроки и предложим подходящую продукцию завода.</p>
-          <a href="mailto:info@zhetysubayisteel.kz?subject=Запрос%20на%20расчет">Отправить запрос <span>→</span></a>
-          <small>Ответим в рабочее время</small>
-        </aside>
-      </div>
-      <div className="heroStrip"><div><b>JINGYE</b><span>официальный партнёр</span></div><div><b>ISO 9001</b><span>контроль качества</span></div><div><b>ISO 14001</b><span>стандарт производства</span></div><div><b>KZ</b><span>поставка по Казахстану</span></div></div>
-    </section>
 
-    <section className="section catalogSection" id="catalog">
-      <div className="sectionTitle"><div><span className="overline">НАША ПРОДУКЦИЯ</span><h2>Каталог металлопроката</h2></div><p>Основные категории продукции Jingye Steel Group. Если нужной позиции нет в списке — отправьте спецификацию.</p></div>
-      <div className="productCards">{products.map((p, i) => <article className="productCard" key={p.title}>
-        <div className="productImage"><img src={p.img} style={{objectPosition:p.pos}} alt={p.title}/><span>0{i+1}</span></div>
-        <div className="productBody"><small>{p.code}</small><h3>{p.title}</h3><p>{p.text}</p><a href="#contact">Узнать цену <b>→</b></a></div>
-      </article>)}</div>
-      <div className="catalogFooter"><span>Также поставляем: круг, швеллер, двутавр, катанку, рельсы и специальные марки стали</span><a href="#contact">Запросить полный каталог →</a></div>
-    </section>
+        <header className="navShell">
+          <a className="brand" href="#top" aria-label="Zhetysu Bayi Steel">
+            <span className="brandMark"><i>Z</i><i>B</i></span>
+            <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
+          </a>
+          <nav aria-label="Главная навигация">
+            <a href="#products">Продукция</a>
+            <a href="#about">О компании</a>
+            <a href="#benefits">Преимущества</a>
+            <a href="#process">Поставка</a>
+          </nav>
+          <a className="navCta" href="#contact">Запросить цену <ArrowRight size={16}/></a>
+        </header>
 
-    <section className="aboutSection" id="about">
-      <div className="aboutMedia"><img src="/images/steel.webp" alt="Металлургическое производство Jingye Steel Group"/><div className="mediaTag"><b>JINGYE</b><span>STEEL GROUP</span></div></div>
-      <div className="aboutContent"><span className="overline light">О ПРОИЗВОДИТЕЛЕ</span><h2>Масштаб завода.<br/><em>Сервис рядом.</em></h2><p className="aboutLead">Zhetysu Bayi Steel представляет продукцию Jingye Steel Group на рынке Казахстана.</p><p>Jingye Steel Group выпускает арматуру, листовой и рулонный прокат, трубы, профильную и специальную сталь. Продукция используется в строительстве, энергетике, транспорте и машиностроении.</p>
-        <div className="certs"><div><b>ISO 9001</b><span>Система менеджмента качества</span></div><div><b>ISO 14001</b><span>Экологический менеджмент</span></div></div>
-        <a className="aboutLink" href="https://www.hebeijingyesteel.com/about_us.html" target="_blank" rel="noreferrer">Официальный сайт производителя <span>↗</span></a>
-      </div>
-    </section>
+        <div className="heroLayout">
+          <div className="heroCopy">
+            <div className="heroBadge"><span/><b>ПРЯМЫЕ ПОСТАВКИ ОТ ЗАВОДА</b></div>
+            <h1>СТАЛЬ,<br/>НА КОТОРУЮ<br/><em>МОЖНО ОПЕРЕТЬСЯ</em></h1>
+            <p>Металлопрокат Jingye Steel Group для строительства, производства и инфраструктурных проектов Казахстана.</p>
+            <div className="heroActions">
+              <a className="button buttonRed" href="#contact">Получить предложение <ArrowRight size={18}/></a>
+              <a className="button buttonLine" href="#products">Смотреть продукцию <ArrowDownRight size={18}/></a>
+            </div>
+          </div>
+          <div className="heroVisual">
+            <img src="/images/steel.webp" alt="Металлургическое производство Jingye Steel Group"/>
+            <div className="heroVisualLabel"><span>JINGYE STEEL GROUP</span><b>OFFICIAL<br/>DISTRIBUTOR</b></div>
+            <div className="heroVisualIndex">01 / 04</div>
+          </div>
+        </div>
 
-    <section className="section advantagesSection" id="advantages">
-      <div className="sectionTitle compact"><div><span className="overline">ПОЧЕМУ МЫ</span><h2>Надёжность на каждом этапе</h2></div></div>
-      <div className="advantagesGrid">{advantages.map(a=><article key={a[0]}><span className="advNumber">{a[0]}</span><div className="advIcon">{a[1]}</div><small>{a[2]}</small><h3>{a[3]}</h3><p>{a[4]}</p><i /></article>)}</div>
-    </section>
+        <div className="heroProof">
+          <div><Factory size={22}/><span><b>Прямой контракт</b>без лишних посредников</span></div>
+          <div><FileCheck2 size={22}/><span><b>Заводские документы</b>на каждую партию</span></div>
+          <div><Globe2 size={22}/><span><b>Международные стандарты</b>ГОСТ, ASTM, EN</span></div>
+          <a href="#contact"><span>Рассчитать заказ</span><ArrowRight size={19}/></a>
+        </div>
+      </section>
 
-    <section className="deliverySection" id="delivery">
-      <div className="deliveryContent"><span className="overline light">КАК МЫ РАБОТАЕМ</span><h2>От заявки<br/>до поставки</h2><p>Берём на себя подбор продукции, коммуникацию с заводом, документы и сопровождение заказа.</p></div>
-      <div className="timeline"><div><b>01</b><span><strong>Заявка</strong>Получаем спецификацию или перечень позиций</span></div><div><b>02</b><span><strong>Расчёт</strong>Согласовываем марку, объём, цену и сроки</span></div><div><b>03</b><span><strong>Производство</strong>Комплектуем и контролируем заказ на заводе</span></div><div><b>04</b><span><strong>Доставка</strong>Сопровождаем документы и получение груза</span></div></div>
-    </section>
+      <section className="introSection section">
+        <div className="sectionLabel"><span>01</span><b>КТО МЫ</b></div>
+        <div className="introGrid">
+          <h2>Официальный партнёр<br/>одного из крупнейших<br/><em>производителей стали</em></h2>
+          <div className="introText"><p>Zhetysu Bayi Steel поставляет металл напрямую от Jingye Steel Group — от единичной спецификации до комплексного снабжения проекта.</p><a href="#about">Подробнее о компании <ArrowRight size={16}/></a></div>
+        </div>
+        <div className="trustRow">
+          <span>JINGYE</span><i/><span>ISO 9001</span><i/><span>ISO 14001</span><i/><span>ACRS</span><i/><span>CARES</span>
+        </div>
+      </section>
 
-    <section className="contactSection" id="contact">
-      <div><span className="overline">КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ</span><h2>Рассчитаем ваш заказ</h2><p>Отправьте спецификацию — подготовим предложение по стоимости, объёму и срокам поставки.</p></div>
-      <div className="contactCard"><span>Для расчёта отправьте:</span><ul><li>наименование и марку стали</li><li>размеры и необходимый объём</li><li>город или адрес поставки</li></ul><a className="btn red" href="mailto:info@zhetysubayisteel.kz?subject=Запрос%20коммерческого%20предложения">Отправить спецификацию <b>→</b></a><small>info@zhetysubayisteel.kz</small></div>
-    </section>
+      <section className="productsSection section" id="products">
+        <div className="sectionHeader">
+          <div className="sectionLabel lightLabel"><span>02</span><b>ПРОДУКЦИЯ</b></div>
+          <div><h2>Металл для<br/>вашего проекта</h2><p>Основные категории продукции Jingye Steel Group. Подберём нужную позицию, даже если её нет в списке.</p></div>
+          <a href="#contact">Полный каталог <ArrowRight size={16}/></a>
+        </div>
+        <div className="productGrid">
+          {products.map((product) => (
+            <article className="productCard" key={product.id}>
+              <div className="productMedia"><img src={product.image} alt={product.title} style={{objectPosition: product.position}}/><span>{product.id}</span><small>{product.tag}</small></div>
+              <div className="productContent"><span>{product.grades}</span><h3>{product.title}</h3><p>{product.text}</p><a href="#contact" aria-label={`Запросить цену: ${product.title}`}><span>Запросить цену</span><ChevronRight size={17}/></a></div>
+            </article>
+          ))}
+        </div>
+        <div className="productTicker"><Boxes size={20}/><p>Также поставляем: круг, швеллер, двутавр, катанку, рельсы и специальные марки стали</p><a href="#contact">Отправить спецификацию <ArrowRight size={16}/></a></div>
+      </section>
 
-    <footer><div className="footerTop"><div className="brand invert"><span className="brandIcon">ZB</span><span><b>ZHETYSU BAYI</b><small>STEEL</small></span></div><p>Официальный дистрибьютор<br/>Jingye Steel Group в Казахстане</p><div className="footerNav"><a href="#catalog">Каталог</a><a href="#about">О компании</a><a href="#contact">Контакты</a></div></div><div className="footerBottom"><span>© 2026 Zhetysu Bayi Steel</span><span>Металлопрокат для сильных проектов</span></div></footer>
-  </main>;
+      <section className="aboutSection" id="about">
+        <div className="aboutPhoto"><img src="/images/factory.webp" alt="Производство листовой стали Jingye Steel Group"/><div className="photoCaption"><span>ПРОИЗВОДСТВЕННАЯ ПЛОЩАДКА</span><b>JINGYE STEEL GROUP</b></div></div>
+        <div className="aboutCopy">
+          <div className="sectionLabel darkLabel"><span>03</span><b>ПРОИЗВОДИТЕЛЬ</b></div>
+          <h2>Масштаб завода.<br/><em>Сервис рядом.</em></h2>
+          <p className="aboutLead">Jingye Steel Group — международный производитель комплексных стальных решений.</p>
+          <p>Предприятие выпускает арматуру, листовой и рулонный прокат, трубы, профильную и специальную сталь для строительства, энергетики, транспорта и машиностроения.</p>
+          <div className="aboutFacts"><div><b>ISO 9001</b><span>Система качества</span></div><div><b>ISO 14001</b><span>Экологический стандарт</span></div><div><b>GLOBAL</b><span>Международные поставки</span></div></div>
+          <a href="https://www.hebeijingyesteel.com/about_us.html" target="_blank" rel="noreferrer">Официальный сайт производителя <ArrowRight size={16}/></a>
+        </div>
+      </section>
+
+      <section className="benefitsSection section" id="benefits">
+        <div className="sectionLabel"><span>04</span><b>ПРЕИМУЩЕСТВА</b></div>
+        <div className="benefitsTop"><h2>Не просто металл.<br/><em>Предсказуемый результат.</em></h2><p>Мы выстраиваем поставку так, чтобы вы заранее понимали продукт, документы, сроки и маршрут заказа.</p></div>
+        <div className="benefitGrid">
+          {advantages.map((item, index) => { const Icon = item.icon; return <article key={item.title}><div className="benefitIcon"><Icon size={27} strokeWidth={1.6}/></div><span>0{index+1}</span><h3>{item.title}</h3><p>{item.text}</p><i/></article> })}
+        </div>
+      </section>
+
+      <section className="processSection" id="process">
+        <div className="processIntro"><div className="sectionLabel darkLabel"><span>05</span><b>ПРОЦЕСС</b></div><h2>От заявки<br/>до поставки</h2><p>Одна понятная цепочка — с ответственностью на каждом этапе.</p><a href="#contact">Начать расчёт <ArrowRight size={16}/></a></div>
+        <div className="processSteps">
+          <div><span>01</span><div><Send size={22}/><h3>Получаем заявку</h3><p>Спецификация, объём и город поставки.</p></div></div>
+          <div><span>02</span><div><Layers3 size={22}/><h3>Подбираем продукцию</h3><p>Согласуем марку, стандарт, размер и аналоги.</p></div></div>
+          <div><span>03</span><div><Factory size={22}/><h3>Комплектуем заказ</h3><p>Производство, контроль и заводские документы.</p></div></div>
+          <div><span>04</span><div><Truck size={22}/><h3>Организуем поставку</h3><p>Сопровождаем груз до получения покупателем.</p></div></div>
+        </div>
+      </section>
+
+      <section className="contactSection section" id="contact">
+        <div className="contactHeadline"><div className="sectionLabel"><span>06</span><b>РАСЧЁТ ЗАКАЗА</b></div><h2>Есть спецификация?<br/><em>Давайте посчитаем.</em></h2><p>Подготовим предложение по продукции, стоимости и срокам поставки.</p></div>
+        <div className="contactPanel">
+          <span className="contactPanelLabel">ДЛЯ РАСЧЁТА НУЖНО</span>
+          <ul><li><Check size={16}/> Наименование и марка стали</li><li><Check size={16}/> Размеры и необходимый объём</li><li><Check size={16}/> Город или адрес поставки</li></ul>
+          <a className="button buttonRed" href="mailto:info@zhetysubayisteel.kz?subject=Запрос%20коммерческого%20предложения">Отправить спецификацию <ArrowRight size={18}/></a>
+          <small>info@zhetysubayisteel.kz</small>
+        </div>
+      </section>
+
+      <footer>
+        <div className="footerMain"><div className="brand footerBrand"><span className="brandMark"><i>Z</i><i>B</i></span><span><b>ZHETYSU BAYI</b><small>STEEL</small></span></div><p>Официальный дистрибьютор<br/>Jingye Steel Group в Казахстане</p><div className="footerLinks"><a href="#products">Продукция</a><a href="#about">О компании</a><a href="#benefits">Преимущества</a><a href="#contact">Контакты</a></div></div>
+        <div className="footerBottom"><span>© 2026 ZHETYSU BAYI STEEL</span><span>МЕТАЛЛ ДЛЯ СИЛЬНЫХ ПРОЕКТОВ</span></div>
+      </footer>
+    </main>
+  );
 }
