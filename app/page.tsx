@@ -6,15 +6,15 @@ const products = [
 ];
 
 const stats = [
-  { num: "10+", label: "лет работы Jingye Steel Group" },
+  { num: "10+", label: "лет работы Bayi Steel" },
   { num: "50+", label: "клиентов в Казахстане" },
   { num: "ISO", label: "9001 · 14001 сертификаты" },
-  { num: "4", label: "категории металлопроката" },
+  { num: "4", label: "категории в наличии на складе" },
 ];
 
 const advantages = [
   {
-    num: "01", tag: "DIRECT PARTNER", title: "Официальный канал", text: "Прямое взаимодействие с Jingye Steel Group без лишних посредников.",
+    num: "01", tag: "DIRECT PARTNER", title: "Официальный канал", text: "Прямое взаимодействие с Bayi Steel без лишних посредников.",
     icon: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/><path d="M7 16l-4-4 4-4"/></svg>,
   },
   {
@@ -34,7 +34,7 @@ const advantages = [
 export default function Home() {
   return <main id="top">
     <div className="topbar">
-      <div>Официальный дистрибьютор Jingye Steel Group</div>
+      <div>Официальный дистрибьютор Jingye Steel и Bayi Steel</div>
       <div><span>Казахстан</span><span>Оптовые поставки металлопроката</span></div>
     </div>
     <header className="siteHeader">
@@ -58,7 +58,7 @@ export default function Home() {
         <div className="heroText">
           <div className="badge"><span className="badgeDot" aria-hidden="true" />ПРЯМЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ</div>
           <h1>МЕТАЛЛОПРОКАТ<br/>ДЛЯ <em>СИЛЬНЫХ</em><br/>ПРОЕКТОВ</h1>
-          <p>Поставляем продукцию Jingye Steel Group для строительных, производственных и инфраструктурных компаний Казахстана.</p>
+          <p>Поставляем продукцию Bayi Steel для строительных, производственных и инфраструктурных компаний Казахстана.</p>
           <div className="heroButtons">
             <a className="btn red" href="#contact">Получить предложение <span aria-hidden="true">→</span></a>
             <a className="btn outline" href="#catalog">Перейти в каталог</a>
@@ -79,10 +79,10 @@ export default function Home() {
         </aside>
       </div>
       <div className="heroStrip" aria-label="Ключевые показатели">
-        <div><b>JINGYE</b><span>официальный партнёр</span></div>
+        <div><b>BAYI STEEL</b><span>официальный партнёр</span></div>
         <div><b>ISO 9001</b><span>контроль качества</span></div>
         <div><b>ISO 14001</b><span>стандарт производства</span></div>
-        <div><b>KZ</b><span>поставка по Казахстану</span></div>
+        <div><b>АЛМАТЫ</b><span>весь ассортимент в наличии</span></div>
       </div>
     </section>
 
@@ -102,7 +102,7 @@ export default function Home() {
           <span className="overline">НАША ПРОДУКЦИЯ</span>
           <h2>Каталог металлопроката</h2>
         </div>
-        <p>Основные категории продукции Jingye Steel Group. Если нужной позиции нет в списке — отправьте спецификацию.</p>
+        <p>Весь ассортимент Bayi Steel в наличии на складе в Алматы. Если нужной позиции нет в списке — отправьте спецификацию.</p>
       </div>
       <div className="productCards">
         {products.map((p, i) => (
@@ -135,14 +135,14 @@ export default function Home() {
 
     <section className="aboutSection" id="about">
       <div className="aboutMedia">
-        <img src="/images/steel.webp" alt="Металлургическое производство Jingye Steel Group" />
-        <div className="mediaTag"><b>JINGYE</b><span>STEEL GROUP</span></div>
+        <img src="/images/steel.webp" alt="Металлургическое производство Bayi Steel" />
+        <div className="mediaTag"><b>BAYI</b><span>STEEL GROUP</span></div>
       </div>
       <div className="aboutContent">
         <span className="overline light">О ПРОИЗВОДИТЕЛЕ</span>
         <h2>Масштаб завода.<br/><em>Сервис рядом.</em></h2>
-        <p className="aboutLead">Zhetysu Bayi Steel представляет продукцию Jingye Steel Group на рынке Казахстана.</p>
-        <p>Jingye Steel Group выпускает арматуру, листовой и рулонный прокат, трубы, профильную и специальную сталь. Продукция используется в строительстве, энергетике, транспорте и машиностроении.</p>
+        <p className="aboutLead">Zhetysu Bayi Steel — официальный представитель Jingye Steel и Bayi Steel на рынке Казахстана.</p>
+        <p>Bayi Steel выпускает арматуру, листовой и рулонный прокат, трубы, профильную и специальную сталь. Продукция используется в строительстве, энергетике, транспорте и машиностроении.</p>
         <div className="certs">
           <div><b>ISO 9001</b><span>Система менеджмента качества</span></div>
           <div><b>ISO 14001</b><span>Экологический менеджмент</span></div>
@@ -211,7 +211,7 @@ export default function Home() {
           <div className="ctaTrust">
             <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Документы на каждую партию</span></div>
             <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Ответ в рабочее время</span></div>
-            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg><span>Прямой канал Jingye Steel</span></div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true"><path d="M17 8l4 4-4 4"/><path d="M3 12h18"/></svg><span>Прямой канал Bayi Steel</span></div>
           </div>
         </div>
         <div className="ctaCard">
@@ -247,7 +247,7 @@ export default function Home() {
           <span className="brandIcon">ZB</span>
           <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
         </div>
-        <p>Официальный дистрибьютор<br/>Jingye Steel Group в Казахстане</p>
+        <p>Официальный дистрибьютор<br/>Bayi Steel в Казахстане</p>
         <nav className="footerNav" aria-label="Навигация в подвале">
           <a href="#catalog">Каталог</a>
           <a href="#about">О компании</a>
