@@ -66,7 +66,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 .navButton:hover span { transform: translateX(3px); }
 
 /* ─── Hero ─── */
-.heroSection { min-height: 750px; position: relative; color: #fff; background: #0d0f11; overflow: hidden; }
+.heroSection { min-height: 580px; position: relative; color: #fff; background: #0d0f11; overflow: hidden; }
 .heroBackdrop {
   position: absolute; inset: 0;
   background: linear-gradient(100deg, #09090bf5 0%, #09090bcc 42%, #09090b66 70%, transparent 100%),
@@ -78,8 +78,8 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   z-index: 3; opacity: .7;
 }
 .heroInner {
-  position: relative; z-index: 2; min-height: 620px;
-  padding: 92px 4.5vw 56px; display: grid; grid-template-columns: 1fr 340px; gap: 6vw; align-items: center;
+  position: relative; z-index: 2; min-height: 480px;
+  padding: 64px 4.5vw 40px; display: grid; grid-template-columns: 1fr 320px; gap: 5vw; align-items: center;
 }
 .heroText { max-width: 780px; }
 .badge {
@@ -90,11 +90,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 }
 .badgeDot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); display: inline-block; flex-shrink: 0; }
 .heroText h1 {
-  font-size: clamp(52px, 6.2vw, 96px); line-height: .92; letter-spacing: -.06em;
-  margin: 24px 0; font-weight: 900; text-transform: uppercase;
+  font-size: clamp(34px, 4vw, 60px); line-height: 1; letter-spacing: -.04em;
+  margin: 18px 0; font-weight: 900; text-transform: uppercase;
 }
-.heroText > p { font-size: 16px; line-height: 1.7; color: #b8bcbc; max-width: 560px; font-weight: 400; margin: 0; }
-.heroButtons { display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
+.heroText > p { font-size: 14px; line-height: 1.65; color: #b8bcbc; max-width: 480px; font-weight: 400; margin: 0; }
+.heroButtons { display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap; }
 
 /* Buttons */
 .btn {
@@ -157,20 +157,20 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   border-bottom: 3px solid var(--red);
 }
 .statItem {
-  padding: 36px 4.5vw; border-right: 1px solid rgba(255,255,255,.1);
-  display: flex; flex-direction: column; gap: 6px;
+  padding: 24px 4.5vw; border-right: 1px solid rgba(255,255,255,.1);
+  display: flex; flex-direction: column; gap: 4px;
 }
 .statItem:last-child { border-right: 0; }
-.statItem b { font-size: clamp(36px, 3.5vw, 54px); font-weight: 900; letter-spacing: -.04em; color: var(--red); line-height: 1; }
-.statItem span { font-size: 11px; color: #8d9194; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; line-height: 1.4; }
+.statItem b { font-size: clamp(26px, 2.6vw, 40px); font-weight: 900; letter-spacing: -.04em; color: var(--red); line-height: 1; }
+.statItem span { font-size: 10px; color: #8d9194; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; line-height: 1.4; }
 
 /* ─── Sections ─── */
-.section { padding: 100px 4.5vw; }
+.section { padding: 64px 4.5vw; }
 .sectionTitle { display: grid; grid-template-columns: 1fr 400px; gap: 60px; align-items: end; }
 .compact { grid-template-columns: 1fr; }
 .overline { display: block; font-size: 10px; color: var(--red); font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; margin-bottom: 2px; }
 .sectionTitle h2, .aboutContent h2, .deliveryContent h2 {
-  font-size: clamp(38px, 4.6vw, 64px); letter-spacing: -.05em; margin: 14px 0 0; line-height: .95; font-weight: 900;
+  font-size: clamp(26px, 3vw, 44px); letter-spacing: -.04em; margin: 10px 0 0; line-height: 1; font-weight: 900;
 }
 .sectionTitle > p { font-size: 15px; color: var(--muted); line-height: 1.72; margin: 0; }
 
@@ -270,7 +270,7 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 
 /* ─── Delivery ─── */
 .deliverySection {
-  background: #1c1f22; color: #fff; padding: 96px 4.5vw;
+  background: #1c1f22; color: #fff; padding: 64px 4.5vw;
   display: grid; grid-template-columns: 38% 62%; gap: 60px; align-items: start;
 }
 .deliveryContent { display: flex; flex-direction: column; }
@@ -297,11 +297,11 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   pointer-events: none;
 }
 .ctaInner {
-  position: relative; z-index: 1; padding: 100px 4.5vw;
-  display: grid; grid-template-columns: 1fr 440px; gap: 8vw; align-items: center;
+  position: relative; z-index: 1; padding: 64px 4.5vw;
+  display: grid; grid-template-columns: 1fr 400px; gap: 6vw; align-items: center;
 }
 .ctaText h2 {
-  font-size: clamp(38px, 4.4vw, 62px); letter-spacing: -.05em; margin: 16px 0 20px; line-height: .95; font-weight: 900;
+  font-size: clamp(26px, 3vw, 44px); letter-spacing: -.04em; margin: 12px 0 16px; line-height: 1; font-weight: 900;
 }
 .ctaText p { font-size: 15px; color: #9a9ea1; line-height: 1.72; max-width: 500px; margin: 0 0 32px; }
 .ctaTrust { display: flex; flex-direction: column; gap: 13px; }
@@ -385,8 +385,8 @@ footer { background: #0c0e10; color: #fff; padding: 52px 4.5vw 24px; }
   .heroStrip > div:nth-child(n+3) { display: none; }
   .statsStrip { grid-template-columns: 1fr 1fr; }
   .statItem { padding: 28px 18px; }
-  .section { padding: 72px 18px; }
-  .sectionTitle h2, .aboutContent h2, .deliveryContent h2 { font-size: 38px; }
+  .section { padding: 48px 18px; }
+  .sectionTitle h2, .aboutContent h2, .deliveryContent h2 { font-size: 28px; }
   .productCards { grid-template-columns: 1fr; gap: 1px; }
   .catalogFooter { flex-direction: column; gap: 12px; align-items: flex-start; }
   .aboutMedia { height: 340px; }
