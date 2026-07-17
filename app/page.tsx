@@ -41,7 +41,9 @@ export default function Home() {
       <a className="brand" href="#top">
         <svg className="brandMark" width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="50" height="44" fill="#121417"/>
-          <polygon points="8,8 42,8 42,14 18,30 42,30 42,36 8,36 8,30 32,14 8,14" fill="white"/>
+          <rect x="7" y="8" width="36" height="7" fill="white"/>
+          <rect x="22" y="15" width="6" height="14" fill="white"/>
+          <rect x="7" y="29" width="36" height="7" fill="white"/>
           <rect x="0" y="40" width="50" height="4" fill="#dc1f26"/>
         </svg>
         <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
@@ -250,7 +252,9 @@ export default function Home() {
         <div className="brand invert">
           <svg className="brandMark" width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <rect width="50" height="44" fill="#121417"/>
-            <polygon points="8,8 42,8 42,14 18,30 42,30 42,36 8,36 8,30 32,14 8,14" fill="white"/>
+            <rect x="7" y="8" width="36" height="7" fill="white"/>
+            <rect x="22" y="15" width="6" height="14" fill="white"/>
+            <rect x="7" y="29" width="36" height="7" fill="white"/>
             <rect x="0" y="40" width="50" height="4" fill="#dc1f26"/>
           </svg>
           <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>

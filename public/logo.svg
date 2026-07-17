@@ -2,8 +2,10 @@
   <title>Zhetysu Bayi Steel</title>
   <!-- Mark: dark background -->
   <rect width="58" height="64" fill="#121417"/>
-  <!-- Z shape: two horizontal bars + diagonal, geometric industrial style -->
-  <polygon points="10,10 48,10 48,18 22,46 48,46 48,54 10,54 10,46 36,18 10,18" fill="white"/>
+  <!-- H-beam cross section (steel profile) -->
+  <rect x="8" y="10" width="42" height="8" fill="white"/>
+  <rect x="26" y="18" width="6" height="16" fill="white"/>
+  <rect x="8" y="34" width="42" height="8" fill="white"/>
   <!-- Red bottom accent -->
   <rect x="0" y="58" width="58" height="6" fill="#dc1f26"/>
   <!-- Wordmark -->
