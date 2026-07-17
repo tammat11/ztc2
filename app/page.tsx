@@ -39,7 +39,11 @@ export default function Home() {
     </div>
     <header className="siteHeader">
       <a className="brand" href="#top">
-        <span className="brandIcon">ZB</span>
+        <svg className="brandMark" width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="50" height="44" fill="#121417"/>
+          <polygon points="8,8 42,8 42,14 18,30 42,30 42,36 8,36 8,30 32,14 8,14" fill="white"/>
+          <rect x="0" y="40" width="50" height="4" fill="#dc1f26"/>
+        </svg>
         <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
       </a>
       <nav aria-label="Основная навигация">
@@ -244,7 +248,11 @@ export default function Home() {
     <footer>
       <div className="footerTop">
         <div className="brand invert">
-          <span className="brandIcon">ZB</span>
+          <svg className="brandMark" width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="50" height="44" fill="#121417"/>
+            <polygon points="8,8 42,8 42,14 18,30 42,30 42,36 8,36 8,30 32,14 8,14" fill="white"/>
+            <rect x="0" y="40" width="50" height="4" fill="#dc1f26"/>
+          </svg>
           <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
         </div>
         <p>Официальный дистрибьютор<br/>Bayi Steel в Казахстане</p>
