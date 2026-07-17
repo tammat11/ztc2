@@ -35,7 +35,7 @@ export default function Home() {
   return <main id="top">
     <div className="topbar">
       <div>Официальный дистрибьютор Jingye Steel и Bayi Steel</div>
-      <div><span>Казахстан</span><span>Оптовые поставки металлопроката</span></div>
+      <div><span>Казахстан</span><span>Поставки металлопроката Bayi Steel</span></div>
     </div>
     <header className="siteHeader">
       <a className="brand" href="#top">
@@ -63,8 +63,8 @@ export default function Home() {
       <div className="heroInner">
         <div className="heroText">
           <div className="badge"><span className="badgeDot" aria-hidden="true" />ПРЯМЫЕ ПОСТАВКИ ОТ ПРОИЗВОДИТЕЛЯ</div>
-          <h1>МЕТАЛЛОПРОКАТ<br/>ДЛЯ <em>СИЛЬНЫХ</em><br/>ПРОЕКТОВ</h1>
-          <p>Поставляем продукцию Bayi Steel для строительных, производственных и инфраструктурных компаний Казахстана.</p>
+          <h1>МЕТАЛЛОПРОКАТ<br/>ОТ <em>ПРОИЗВОДИТЕЛЯ</em><br/>В КАЗАХСТАНЕ</h1>
+          <p>Поставляем продукцию Bayi Steel любого объёма — от небольших партий до крупных заказов. Без лишних посредников.</p>
           <div className="heroButtons">
             <a className="btn red" href="#contact">Получить предложение <span aria-hidden="true">→</span></a>
             <a className="btn outline" href="#catalog">Перейти в каталог</a>
@@ -268,7 +268,7 @@ export default function Home() {
       </div>
       <div className="footerBottom">
         <span>© 2026 Zhetysu Bayi Steel</span>
-        <span>Металлопрокат для сильных проектов</span>
+        <span>Официальный дистрибьютор Bayi Steel в Казахстане</span>
       </div>
     </footer>
   </main>;
