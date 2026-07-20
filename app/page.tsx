@@ -79,7 +79,7 @@ export default function Home() {
           <p className="quoteLabel">Быстрый расчёт</p>
           <h2>Отправьте<br/>спецификацию</h2>
           <p>Рассчитаем стоимость, сроки и предложим подходящую продукцию завода.</p>
-          <a href="mailto:info@zhetysubayisteel.kz?subject=Запрос%20на%20расчет" className="quoteLink">
+          <a href="https://wa.me/77025429141?text=Здравствуйте%2C%20хочу%20запросить%20расчёт%20по%20металлопрокату" target="_blank" rel="noreferrer" className="quoteLink">
             <span>Отправить запрос</span>
             <span className="quoteLinkArrow" aria-hidden="true">→</span>
           </a>
@@ -248,7 +248,7 @@ export default function Home() {
               <span>Город или адрес поставки</span>
             </li>
           </ul>
-          <a className="btn red ctaBtn" href="mailto:info@zhetysubayisteel.kz?subject=Запрос%20коммерческого%20предложения">
+          <a className="btn red ctaBtn" href="https://wa.me/77025429141?text=Здравствуйте%2C%20хочу%20отправить%20спецификацию%20на%20расчёт" target="_blank" rel="noreferrer">
             Отправить спецификацию <b aria-hidden="true">→</b>
           </a>
           <div className="ctaContacts">
