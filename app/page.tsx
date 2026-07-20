@@ -39,12 +39,14 @@ export default function Home() {
     </div>
     <header className="siteHeader">
       <a className="brand" href="#top">
-        <svg className="brandMark" width="50" height="44" viewBox="0 0 50 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="50" height="44" fill="#121417"/>
-          <rect x="7" y="8" width="36" height="7" fill="white"/>
-          <rect x="22" y="15" width="6" height="14" fill="white"/>
-          <rect x="7" y="29" width="36" height="7" fill="white"/>
-          <rect x="0" y="40" width="50" height="4" fill="#dc1f26"/>
+        <svg className="brandMark" width="65" height="44" viewBox="0 0 108 72" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="42" cy="40" r="26" fill="#121417"/>
+          <rect x="53" y="55" width="18" height="9" fill="#121417"/>
+          <circle cx="47" cy="35" r="27.5" fill="#fff"/>
+          <circle cx="47" cy="35" r="26" fill="#dc1f26"/>
+          <circle cx="47" cy="35" r="11" fill="#fff"/>
+          <circle cx="49" cy="37" r="9.5" fill="#121417"/>
+          <rect x="58" y="53" width="36" height="9" fill="#dc1f26"/>
         </svg>
         <span><b>ZHETYSU BAYI</b><small>STEEL</small></span>
       </a>
