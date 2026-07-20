@@ -340,11 +340,17 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
   display: grid; place-items: center; font-size: 10px; font-weight: 800; flex-shrink: 0; margin-top: 1px;
 }
 .ctaBtn { width: 100%; font-size: 12px; letter-spacing: .6px; }
-.ctaEmail {
-  display: flex; align-items: center; gap: 8px; justify-content: center;
-  margin-top: 14px; font-size: 11px; color: #aaa; letter-spacing: .3px;
+.ctaContacts { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+.ctaContact {
+  display: flex; align-items: center; gap: 9px;
+  font-size: 12px; color: #aaa; letter-spacing: .3px; transition: color .2s;
 }
-.ctaEmail svg { color: var(--muted); }
+.ctaContact:hover { color: #fff; }
+.ctaContact svg { color: var(--red); flex-shrink: 0; }
+
+.footerContacts { display: flex; flex-direction: column; gap: 8px; }
+.footerContacts a { font-size: 12px; color: #7a7e82; transition: color .2s; }
+.footerContacts a:hover { color: #fff; }
 
 /* ─── Footer ─── */
 footer { background: #0c0e10; color: #fff; padding: 52px 4.5vw 24px; }
